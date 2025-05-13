@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeInLeft {
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+.animate-fadeInRight {
+  animation: fadeInRight 0.5s ease-out forwards;
+}
+
+/* Editor Styles */
+.tiptap {
+  @apply outline-none;
+}
+
+.tiptap p {
+  @apply mb-4;
+}
+
+.tiptap h2 {
+  @apply text-3xl font-bold mb-6 mt-8;
+}
+
+.tiptap h3 {
+  @apply text-2xl font-bold mb-4 mt-6;
+}
+
+.tiptap ul {
+  @apply list-disc pl-6 mb-4;
+}
+
+.tiptap ol {
+  @apply list-decimal pl-6 mb-4;
+}
+
+.tiptap li {
+  @apply mb-2;
+}
+
+.tiptap [data-text-align='center'] {
+  @apply text-center;
+}
+
+.tiptap [data-text-align='right'] {
+  @apply text-right;
+}
+
+/* Content Display Styles */
+.founder-content h2 {
+  @apply text-3xl font-bold mb-6 mt-8;
+}
+
+.founder-content h3 {
+  @apply text-2xl font-bold mb-4 mt-6;
+}
+
+.founder-content p {
+  @apply mb-4 text-gray-600 leading-relaxed;
+}
+
+.founder-content ul {
+  @apply list-disc pl-6 mb-4 text-gray-600;
+}
+
+.founder-content ol {
+  @apply list-decimal pl-6 mb-4 text-gray-600;
+}
+
+.founder-content li {
+  @apply mb-2;
+}
+
+.founder-content [data-text-align='center'] {
+  @apply text-center;
+}
+
+.founder-content [data-text-align='right'] {
+  @apply text-right;
+}
